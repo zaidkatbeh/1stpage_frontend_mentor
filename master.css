@@ -1,0 +1,107 @@
+*{
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color:hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.container p{font-size: 16px;}
+.container{
+    position: relative;
+    margin-left: 35%;
+    margin-top: 90px;
+    width: 450px;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.container>img {
+    border-start-start-radius: 20px;
+    border-start-end-radius: 20px;
+}
+.container .content>p{
+    
+    color: rgba(0, 0, 0, 0.616);
+    text-align: center;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+.container .content{
+    padding: 0 60px;
+}
+.container .plane{
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: hsla(225, 100%, 94%, 0.45);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    justify-content: space-between;
+    align-content: space-between;
+}
+.container .plane img{
+    width: fit-content;
+    height: fit-content;
+}
+.container .plane .link{
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    line-height: 50px;
+}
+.container .plane h3{
+    font-weight: bold;
+}
+.container .plane h3,
+.container .plane h3 p{
+    line-height: -40px;
+    display: inline;
+}
+.container .plane h3 p{
+    color: rgba(0, 0, 0, 0.616);
+}
+.container  button{
+    margin-left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    background-color:hsl(245, 75%, 52%);
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-weight: bold;
+}
+.container  button:last-of-type{
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.692);
+    background-color: transparent;
+}
+@media (max-width:380px)
+{
+    body{
+        background-image: url(images/pattern-background-mobile.svg);
+        background-size: cover;
+    }
+}
